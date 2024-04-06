@@ -1,10 +1,10 @@
-package com.agan.springbootpurposeinternalstructurehwconditionalapp;
+package com.agan.conditionalapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootPurposeInternalStructureHwConditionalAppApplicationTests {
+class ConditionalAppApplicationTests {
 
     @Test
     void contextLoads() {
