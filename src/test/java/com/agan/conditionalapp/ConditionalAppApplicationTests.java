@@ -46,6 +46,14 @@ public class ConditionalAppApplicationTests {
         assertEquals("Current profile is production", response);
     }
 
+    @Test
+    public void testProdProfile_withOtherWay() {
+        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:" + prodapp.getMappedPort(8081) + "/profile", String.class);
+
+
+        assertEquals("Current profile is production", response.getBody());
+    }
+
     @AfterAll
     public static void tearDown() {
         devapp.stop();
